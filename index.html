@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- start-header -->
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo (1).png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i> 
+            </nav>
+            <div class="content">
+                <div class="header-text"  >
+                    <p>i,m web designer</p>
+                    <h1>hi i'am <span>ahmed</span><br/>web developer & designer </h1>
+                </div>
+                <div class="right-section">
+                    <div class="brdr"> </div>
+                    <img src="images/myphoto.png" alt="" class="myphoto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-header -->
+
+
+    <!-- start-about -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/team-6.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nobis rem eaque voluptate, iusto nostrum a!
+                        Et, facere vel atque ratione beatae magnam minus vero esse, amet ducimus hic labore aliquid nihil aspernatur!
+                        Delectus fuga libero provident natus similique itaque maiores magnam iure culpa, voluptas modi, labore dolorum
+                        accusantium vel?</p>
+
+                    <div class="tap-title ">
+                        <div class="tap-links active-link" onclick="opentap('slills')">skills</div>
+                        <div class="tap-links " onclick="opentap('experience')">experience</div>
+                        <div class="tap-links" onclick="opentap('education')">education</div>
+                    </div>
+                    <div class="tap-contants active-tap" id="slills">
+                        <ul>
+                            <li><span>web devolper</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>web devolper</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>web devolper</span><br>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                    <div class="tap-contants " id="experience">
+                        <ul>
+                            <li><span>web devolper</span><br>Lorem, hambozooo.</li>
+                            <li><span>web devolper</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>web devolper</span><br>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                    <div class="tap-contants" id="education">
+                        <ul>
+                            <li><span>web devolper</span><br>Lorem, hello world.</li>
+                            <li><span>web devolper</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>web devolper</span><br>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-about -->
+
+
+    <!-- start-services -->
+    <div id="services" class="services">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+    
+            <div class="services-list">
+                <div class="service-box">
+                    <i class="fas fa-code"></i>
+                    <h2>web devolper</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti eligendi repellendus
+                        voluptatem illo vero
+                        obcaecati, est sed quos hic? Earum, natus nam accusamus sed quidem labore harum magni ea!</p>
+                        <a href="#">lern more</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>ui/ux designer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti eligendi repellendus
+                        voluptatem illo vero
+                        obcaecati, est sed quos hic? Earum, natus nam accusamus sed quidem labore harum magni ea!</p>
+                        <a href="#">lern more</a>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-heart-circle-plus"></i>
+                    <h2>software engineer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti eligendi repellendus
+                        voluptatem illo vero
+                        obcaecati, est sed quos hic? Earum, natus nam accusamus sed quidem labore harum magni ea!</p>
+                        <a href="#">lern more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-services -->
+
+
+    <!-- start-portfolio -->
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">my work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/img1.jpg" alt="">
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, amet.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img2.jpg" alt="">
+                    <div class="layer">
+                        <h3>music app</h3>
+                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, amet.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img3.jpg" alt="">
+                    <div class="layer">
+                        <h3>playing app</h3>
+                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, amet.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">see more</a>
+    </div>
+    <!-- end-portfolio -->
+
+
+    <!-- start-contact -->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>01234567890</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="/images/cv.pdf" download="" class="btn btn2">download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message"  rows="6" placeholder="your  message" required></textarea>
+                        <button type="submit " class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copy write ahmed made with <i class="fas fa-heart"></i> by easy tuttorials</p>
+        </div>
+    </div>
+    <!-- end-contact -->
+
+ 
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
