@@ -33,3 +33,15 @@ function opentap(tapName) {
   })
           .catch(error => console.error('Error!', error.message))
   })
+
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+
+    darkModeToggle.addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode', darkModeToggle.checked);
+});
+
+
+
+
