@@ -182,6 +182,10 @@ nav ul li a:hover:after{
     font-size: 14px;
     line-height: 1.1rem;
 }
+.tap-contants ul li img{
+    width: 50px;
+    margin-right: 5px;
+}
 
 .tap-contants ul li span{
     color: rgb(189, 40, 13);
