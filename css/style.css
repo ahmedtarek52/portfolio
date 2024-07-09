@@ -29,7 +29,7 @@ body {
     color:var(--text-color);
 }
 .header .logo{
-    color: #ff004f;
+    color: rgb(255, 0, 79);
     font-size: 30px;
     font-family: "Poppins";
     font-weight: 600;
