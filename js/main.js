@@ -1,11 +1,18 @@
 const allTaps = document.querySelectorAll('.tap-contants');
 const allLinks = document.querySelectorAll('.tap-links');
-function opentap(tapName) {
-    allTaps.forEach(tap => tap.classList.remove('active-tap'));
-    allLinks.forEach(link => link.classList.remove('active-link'));
-    document.getElementById(tapName).classList.add('active-tap');
-    event.currentTarget.classList.add('active-link');
-  }
+function opentap(tapName, event) {
+  const currentSection = event.currentTarget.closest('.section'); // Adjust based on your structure
+
+  const allTaps = currentSection.querySelectorAll('.tap-contants');
+  const allLinks = currentSection.querySelectorAll('.tap-links');
+
+  allTaps.forEach(tap => tap.classList.remove('active-tap'));
+  allLinks.forEach(link => link.classList.remove('active-link'));
+
+  currentSection.querySelector(`#${tapName}`).classList.add('active-tap');
+  event.currentTarget.classList.add('active-link');
+}
+
 
 
   var sidemenu = document.getElementById('sidemenu')

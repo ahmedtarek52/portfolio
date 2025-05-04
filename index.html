@@ -37,7 +37,7 @@
             <div class="content">
                 <div class="header-text"  >
                     <p>i'am software engineer</p>
-                    <h1>hi i'am <span>ahmed</span><br/>web developer & designer </h1>
+                    <h1>hi i'am <span>ahmed</span><br/>Game developer & designer </h1>
                 </div>
                 <div class="right-section">
                     <div class="brdr"> </div>
@@ -50,6 +50,7 @@
 
 
     <!-- start-about -->
+     <div class="section">
     <div id="about" class="about">
         <div class="container">
             <div class="row">
@@ -58,17 +59,23 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I'm Ahmed Tarek, a Front-End Web Developer with experience in creating responsive web application UIs. I have a
-                        passion for problem-solving and writing clean, efficient code. My primary expertise lies in JavaScript, React, and
-                        Object-Oriented Programming.</p>
+                    <p>Hi, I'm Ahmed Tarek, a Game Developer skilled in building interactive and immersive experiences using Unity and Unreal Engine.
+                         I have a strong foundation in C++, with additional experience in C#,
+                         JavaScript, and object-oriented programming, and a passion for creating polished, engaging gameplay.</p>
                     <div class="tap-title ">
-                        <div class="tap-links active-link" onclick="opentap('slills')">Skills</div>
-                        <div class="tap-links " onclick="opentap('experience')">Experience</div>
-                        <div class="tap-links" onclick="opentap('education')">Education</div>
+
+
+                        <div class="tap-links active-link" onclick="opentap('skills', event)">Skills</div>
+                        <div class="tap-links" onclick="opentap('education', event)">Education</div>
                     </div>
-                    <div class="tap-contants active-tap" id="slills">
+                    <div class="tap-contants active-tap" id="skills">
                         <ul>
                             <li><span>Skills & Framework</span><br>
+                                <img src="images/c-.png" alt="c" loading="lazy">
+                                <img src="images/c-sharp.png" alt="c-sharp" loading="lazy">
+                                <img src="images/unity.png" alt="unity" loading="lazy">
+                                <img src="images/unreal-engine.png" alt="unreal-engine" loading="lazy">
+                                <img src="images/github.png" alt="github" loading="lazy"><br>
                                <img src="images/html-5.png" alt="html" loading="lazy">
                                <img src="images/social.png" alt="css" loading="lazy">
                                <img src="images/js.png" alt="js" loading="lazy">
@@ -76,44 +83,34 @@
                                <img src="images/physics.png" alt="react" loading="lazy">
                                <img src="images/typescript.png" alt="ts" loading="lazy">
                                <img src="images/nodejs.png" alt="nodejs" loading="lazy">
-                               <img src="images/github.png" alt="github" loading="lazy">
                             </li>
-                            <li><span>Soft Skills</span><br>Teamwork , problem-solving , work under prssure , 
+                            <li><span>Soft Skills</span><br> SFML, Box2D, OpenGL, Behavior Bricks, PhysX, Animation Blueprints, UI/UX Systems, Networking, Shader Programming (HLSL/GLSL)<br> Teamwork , problem-solving , 
                                 Microsoft Word , Microsoft Excel , Microsoft PowerPoint</li>
                             <li><span>Languages</span><br>English</li>
                         </ul>
                     </div>
-                    <div class="tap-contants " id="experience">
+                    <!-- <div class="tap-contants " id="experience">
                         <ul>
                             <li><span>Data Analyst at EVARA GROUP</span>
                             <p>Coordinated the preparation and submission of employee CVs for tenders using company templates, collaborating with a team of 3 engineers.</p>
                             <p>Demonstrated proficiency in task delegation, ensuring effective division of responsibilities among team members.</p>
                             <p>Maintained adherence to project schedules and deadlines, consistently delivering projects on time.</p>
                             </li>
-                            <li><span>Frontend Developer at Freelance</span>
-                            <p>I am a highly skilled Frontend Developer and freelancer.</p>
-                            <p>I specialize in JavaScript and React, consistently delivering top-tier, responsive web applications with clean, maintainable code.</p>
-                            <p>I have worked on diverse projects, such as an e-commerce platform with secure authentication and a dynamic blogging platform optimized for SEO.</p>
-                            </li>
-                            <li><span>Accountant at AlNOUR-PIPE</span>
-                            <p>Managed accounting functions including financial transactions, import-export activities, and client communication regarding balances.</p>
-                            <p>Conducted daily inventory checks to mitigate financial deficits and ensured weekly debt confirmation with clients.</p>
-                            <p>Utilized both paper and computer-based systems, particularly Excel, for accurate transaction recording and analysis.</p>
-                            </li>
                             
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="tap-contants" id="education">
                         <ul>
-                            <li><span>Bachelor of computer science , Menoufia University</span><br>software development and artificial intelligence.</li>
-                            <!-- <li><span>web devolper</span><br>Lorem, hello world.</li> -->
-                            
+                            <li><span> Information Technology Institute (ITI)</span><br>Game Development (9-Month Professional Diploma)</li>
+                            <li><span> Menoufia University (Faculty of Computers and Information)</span><br> Bachelor of Science in Computer Science</li>
+                            <!-- <li><span>web devolper</span><br>Lorem, hello world.</li> -->        
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- end-about -->
 
 
@@ -123,6 +120,17 @@
             <h1 class="sub-title">About Me</h1>
     
             <div class="services-list">
+
+                <div class="service-box">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game Developer</h2>
+                    <p>Craft immersive gameplay experiences with creativity and technical skill. Utilize your expertise in design, coding
+                        , and problem-solving to build engaging, polished games.
+                         Your attention to detail brings ideas to life and ensures smooth, enjoyable user interactions.</p>
+                    <a href="#">lern more</a>
+                </div>
+
+
                 <div class="service-box">
                     <i class="fas fa-code"></i>
                     <h2>web devolper</h2>
@@ -133,14 +141,7 @@
                         stand out.</p>
                     <a href="#">lern more</a>
                 </div>
-                <div class="service-box">
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>Accountant</h2>
-                    <p>Excel in managing financial records with precision and integrity. Utilize your expertise to provide
-                        insightful analysis and ensure accuracy in every transaction. Your attention to detail keeps the
-                        company's finances on track and compliant.</p>
-                    <a href="#">lern more</a>
-                </div>
+             
                 <div class="service-box">
                     <i class="fas fa-heart-circle-plus"></i>
                     <h2>software engineer</h2>
@@ -156,62 +157,137 @@
 
 
     <!-- start-portfolio -->
+     <div class="section">
     <div id="portfolio" class="portfolio">
         <div class="container">
             <h1 class="sub-title">my work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/img1.jpeg" alt="">
-                    <div class="layer">
-                        <h3>media app</h3>
-                        <p>Design a media app with HTML and CSS. It should have a sleek, responsive layout and smooth animations.</p>
-                        <a href="https://ahmedtarek52.github.io/html-css-template-two/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                <div class="tap-title ">
+                    <div class="tap-links active-link" onclick="opentap('games', event)">Games</div>
+                    <div class="tap-links" onclick="opentap('websites', event)">Websites</div>
+                </div>
+
+                <div class="tap-contants active-tap" id="games">
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/game3.png" alt="">
+                            <div class="layer">
+                                <h3>Denizens of the deep</h3>
+                                <p> Squid turret system built in Unreal Engine (C++), inspired by Marvel Rivals’ Namor.</p>
+                                <a href="https://www.artstation.com/artwork/ZlBYn1" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/game4.png" alt="">
+                            <div class="layer">
+                                <h3> Sci-Fi Action Game</h3>
+                                <p>Sci-Fi Action Game built in Unreal Engine (Blueprints) with third-person character, driveable vehicle, and AI turrets.</p>
+                                <a href="https://www.artstation.com/artwork/XJ266D" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/game2.png" alt="">
+                            <div class="layer">
+                                <h3>FPS Game</h3>
+                                <p>Developed a 3D FPS with enemy AI (finite state & Behavior Bricks), weapon systems, and respawn mechanics.</p>
+                                <a href="https://vimeo.com/1081185108/35bb7dce04?share=copy" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/game1.png" alt="">
+                            <div class="layer">
+                                <h3>Dragon Game</h3>
+                                <p>A 2D Unity game where a dragon collects coins, avoids obstacles, and dies upon collision.</p>
+                                <a href="https://ahmedtarek52.itch.io/dragon-game2d" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="work">
+                            <img src="images/game7.png" alt="">
+                            <div class="layer">
+                                <h3> Brick Breaker</h3>
+                                <p>  Enhanced rendering and effects using OpenGL for improved game visuals.</p>
+                                <a href="https://drive.google.com/drive/folders/1eR_2C1REEjkA3OZGrMFOLEk7S3yHQsQw" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+
+                        <div class="work">
+                            <img src="images/game5.png" alt="">
+                            <div class="layer">
+                                <h3>Solar system</h3>
+                                <p> An interactive simulation built with C++, SFML, and Box2D where users spawn planets orbiting a central star</p>
+                                <a href="https://drive.google.com/drive/folders/1IgeDAwQlQAsIlAZGhwPEqRCjNlyd4km8" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img src="images/game6.png" alt="">
+                            <div class="layer">
+                                <h3>Snake Game</h3>
+                                <p> Developed two versions: one using Object-Oriented Programming (OOP) and another with a structured approach.</p>
+                                <a href="https://drive.google.com/drive/folders/1a-Sgi1vZ1nN4-0aucaRKZB5ujsvuNbfx" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/img2.jpeg" alt="">
-                    <div class="layer">
-                        <h3>web design app</h3>
-                        <p>Create a web design app with Bootstrap, HTML, and CSS. Ensure it has an attractive and user-friendly design.</p>
-                        <a href="https://ahmedtarek52.github.io/Bootstrap_first_project/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+
+                <div class="tap-contants" id="websites">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/img1.jpeg" alt="">
+                        <div class="layer">
+                            <h3>media app</h3>
+                            <p>Design a media app with HTML and CSS. It should have a sleek, responsive layout and smooth animations.</p>
+                            <a href="https://ahmedtarek52.github.io/html-css-template-two/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/img6.jpeg" alt="">
-                    <div class="layer">
-                        <h3>restaurant</h3>
-                        <p>restaurant web app using React, Tailwind, and Node.js, featuring smooth animations with AOS for an engaging user experience.</p>
-                        <a href="https://restaurant-omega-ivory.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="work">
+                        <img src="images/img2.jpeg" alt="">
+                        <div class="layer">
+                            <h3>web design app</h3>
+                            <p>Create a web design app with Bootstrap, HTML, and CSS. Ensure it has an attractive and user-friendly design.</p>
+                            <a href="https://ahmedtarek52.github.io/Bootstrap_first_project/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/img3.jpeg" alt="">
-                    <div class="layer">
-                        <h3>movie app</h3>
-                        <p>Develop a movie app using React and a trending movies API, styled with Bootstrap for a clean look.</p>
-                        <a href="https://movie-app-kappa-liard.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="work">
+                        <img src="images/img6.jpeg" alt="">
+                        <div class="layer">
+                            <h3>restaurant</h3>
+                            <p>restaurant web app using React, Tailwind, and Node.js, featuring smooth animations with AOS for an engaging user experience.</p>
+                            <a href="https://restaurant-omega-ivory.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/img4.jpeg" alt="">
-                    <div class="layer">
-                        <h3>Donation Charity</h3>
-                        <p>Designed a responsive web app for charity donations using ReactJS, Bootstrap, API integration, hooks, context, and a user profile page.</p>
-                        <a href="https://wep-project-phi.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="work">
+                        <img src="images/img3.jpeg" alt="">
+                        <div class="layer">
+                            <h3>movie app</h3>
+                            <p>Develop a movie app using React and a trending movies API, styled with Bootstrap for a clean look.</p>
+                            <a href="https://movie-app-kappa-liard.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/img5.jpeg" alt="">
-                    <div class="layer">
-                        <h3>product-builder</h3>
-                        <p>Product-Builder is a web application built with React, Vite, TypeScript, and Tailwind, featuring a fully dynamic interface.</p>
-                        <a href="https://product-builder-sigma.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="work">
+                        <img src="images/img4.jpeg" alt="">
+                        <div class="layer">
+                            <h3>Donation Charity</h3>
+                            <p>Designed a responsive web app for charity donations using ReactJS, Bootstrap, API integration, hooks, context, and a user profile page.</p>
+                            <a href="https://wep-project-phi.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/img5.jpeg" alt="">
+                        <div class="layer">
+                            <h3>product-builder</h3>
+                            <p>Product-Builder is a web application built with React, Vite, TypeScript, and Tailwind, featuring a fully dynamic interface.</p>
+                            <a href="https://product-builder-sigma.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <a href="https://github.com/ahmedtarek52" target="_blank" class="btn">see more</a>
     </div>
+</div>
     <!-- end-portfolio -->
 
 
